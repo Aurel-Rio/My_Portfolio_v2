@@ -1,0 +1,87 @@
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: 2s;
+}
+
+
+.Logo_riozacki {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    animation: rotate 1.7s linear forwards, fade-in 1s linear;
+    transition: all .2s ease-in-out;
+
+    animation-iteration-count: 1;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+    
+  @keyframes rotate {
+    0% {
+      transform: translate(150%, -500%) rotate(0deg) scale(10);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
+    }
+  }
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    animation: fade-in 1s linear;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,0,0,1) 76%, rgba(0,0,0,1) 100%);}
+
+nav ul{
+    display: flex;
+    float: right;
+    margin-right: 25px;
+}
+
+
+nav ul li{
+    margin-right: 25px;
+}
+
+nav ul li a{
+    color: aliceblue;
+}
+
+body{
+    margin: 120px 80px 120px 80px;
+    background-color: black;
+    color: aliceblue
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    color: aliceblue;
+    text-align: center;
+    animation: fade-in 1s linear;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(27, 0, 0) 50%, rgba(0,0,0,1) 100%);
+}
+
+footer p {
+  margin-top: 15px;
+}
+

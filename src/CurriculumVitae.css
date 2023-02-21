@@ -1,0 +1,9 @@
+img {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.img_cv:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.95ebaa7e.css",
+    "main.js": "/static/js/main.ae8e4924.js",
+    "static/js/787.218d0f96.chunk.js": "/static/js/787.218d0f96.chunk.js",
+    "static/media/my_title.png": "/static/media/my_title.8365be5700a3d068e6cf.png",
+    "static/media/my_cv.png": "/static/media/my_cv.940c16e45735522d159a.png",
+    "static/media/rt1.jpg": "/static/media/rt1.38737d1e52cc0545662b.jpg",
+    "static/media/riozacki_logo_red2.png": "/static/media/riozacki_logo_red2.f9170f2f09b72a51bc27.png",
+    "index.html": "/index.html",
+    "main.95ebaa7e.css.map": "/static/css/main.95ebaa7e.css.map",
+    "main.ae8e4924.js.map": "/static/js/main.ae8e4924.js.map",
+    "787.218d0f96.chunk.js.map": "/static/js/787.218d0f96.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95ebaa7e.css",
+    "static/js/main.ae8e4924.js"
+  ]
+}

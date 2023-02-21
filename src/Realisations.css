@@ -1,0 +1,14 @@
+.projet h4 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.projet img {
+    margin-bottom: 40px;
+    width:  85vw;
+    border:1px solid rgb(134, 134, 134)
+}
+
+.projet p {
+    margin-top: 20px;
+}
