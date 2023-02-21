@@ -1,6 +1,7 @@
 .projet h4 {
-    margin-top: 25px;
+    margin-top: 60px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .projet img {
@@ -11,4 +12,9 @@
 
 .projet p {
     margin-top: 20px;
+}
+
+#Realisations{
+
+    text-align: center;
 }
