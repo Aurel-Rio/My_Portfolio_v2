@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import ProjetItem from "./Projet"; 
+import ProjetItem from "./Projet";
 import { Button } from "react-bootstrap";
 
 
@@ -10,7 +10,7 @@ import "../Realisations.css";
 const projets = [
   {
     titre: "Projet 1: Ce Portfolio !",
-    id: "projet1",
+    id: 1,
     description: (
       <div className="portfolio">
         <h4>Voici la liste des principales technologies et dépendances utilisées pour réaliser mon portfolio :</h4>
@@ -37,7 +37,7 @@ const projets = [
     ],
   },
   {
-    id: "projet2",
+    id: 2,
     titre: "Projet 2: Site vitrine pour la boutique Iss09 (Informatique, Services, Saverdun)",
     techno: "Technologies utilisées: Html5, Css3, Php, JavaScript",
     description:
@@ -50,7 +50,7 @@ const projets = [
     link: <a href="http://www.iss09.fr" target="about:blank">Lien vers le site Iss09</a>
   },
   {
-    id: "projet3",
+    id: 3,
     titre: "Projet 3: Projet de plateforme Web Retro_Tech - En cours",
     techno: "Technologies utilisées: Bootstrap, NodeJs, ReactJs, css3, git",
     description:
@@ -62,7 +62,7 @@ const projets = [
     ],
   },
   {
-    id: "projet4",
+    id: 4,
     titre: "Projet 4: Projet de site Web e-commerce (Bijoux Fantaisie) - En cours",
     techno: "Technologies utilisées:Bootstrap, NodeJs, ReactJs, css3, git",
     description:
@@ -85,28 +85,29 @@ const Realisations = () => {
           Découvrez mes projets réalisés, qui mettent en avant mon expertise en
           matière de développement web.
         </h3>
+      
         <div>
-          <Button variant="primary" href="#projet1">Projet 1</Button>
-          <Button variant="primary" href="#projet2">Projet 2</Button>
-          <Button variant="primary" href="#projet3">Projet 3</Button>
-          <Button variant="primary" href="#projet4">Projet 4</Button>
+
+          <Button variant="primary" href={`#${1}`}>Projet 1</Button>
+          <Button variant="primary" href={`#${2}`}>Projet 2</Button>
+          <Button variant="primary" href={`#${3}`}>Projet 3</Button>
+          <Button variant="primary" href={`#${4}`}>Projet 4</Button>
+
         </div>
+  
       </div>
 
-      {ProjetItem.map(projet => (
-        <div key={projet.id} id={projet.id}>
-          <h3>{projet.titre}</h3>
-          {projet.techno && <p>{projet.techno}</p>}
-          {projet.description && <p>{projet.description}</p>}
-          {projet.imageSrc && (
-            <div>
-              {projet.imageSrc.map((src, index) => (
-                <img key={index} src={src} alt={projet.titre} />
-              ))}
-            </div>
-          )}
-          {projet.link && projet.link}
-        </div>
+      {projets.map((projet, index) => (
+        <ProjetItem
+       
+          key={projet.id}
+          id={projet.id}
+          titre={projet.titre}
+          techno={projet.techno}
+          description={projet.description}
+          imageSrc={projet.imageSrc}
+          link={projet.link}
+        />
       ))}
       <Footer />
     </div>

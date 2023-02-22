@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Projet = ({ titre, techno, description, imageSrc, link }) => {
+const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -16,8 +16,9 @@ const Projet = ({ titre, techno, description, imageSrc, link }) => {
 
   return (
     <div className="projet">
+      {id}
       <h4>{titre}</h4>
-      <h4> {techno}</h4>
+      <h4>Technologies utilisées: {techno}</h4>
       <div>{description}</div>
       <Slider {...settings}>
         {imageSrc.map((imageSrc, index) => (
