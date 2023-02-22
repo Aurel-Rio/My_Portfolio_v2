@@ -1,90 +1,99 @@
 /*RESET*/
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 
 }
 
-#navi{
+#navi {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  
+
 }
+
 .Logo_riozacki {
-    position: absolute;
-    top: 0px;
-    left: 25px;
-    width: 150px;
-    height: 150px;
-    animation: rotate 1s linear forwards, fade-in 1s linear;
-    transition: all .1s ease-in-out;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
+  animation: rotate 1s linear forwards, fade-in 1s linear;
+  transition: all .1s ease-in-out;
 
-    animation-iteration-count: 1;
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-    
-  @keyframes rotate {
-    0% {
-      transform: translate(-50%, -500%) rotate(0deg) scale(15);
-    }
-
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
-    }
-  }
-
-nav{
-
-  
-    height: 60px;
-    width: 100%;
-    animation: fade-in 1s linear;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(48,0,0,1) 76%, rgba(0,0,0,1) 100%);}
-
-nav ul{
-    display: flex;
-    float: right;
-    margin-right: 25px;
-    animation: fade-in 0.2s linear;
-    transition: none;
+  animation-iteration-count: 1;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
 
-nav ul li{
-    margin-right: 25px;
-    animation: fade-in 0.2s linear;
-    transition: none;
+  to {
+    opacity: 1;
+  }
 }
 
-nav ul li a{
-    color: aliceblue;
-    animation: fade-in 0.2s linear;
-    transition: none;
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -500%) rotate(0deg) scale(15);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(0.2);
+  }
 }
 
-nav ul li:hover{
- background-color: rgb(75, 0, 0);
+nav {
+  height: 60px;
+  width: 100%;
+  animation: fade-in 1s linear;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(48, 0, 0, 1) 76%, rgba(0, 0, 0, 1) 100%);
+}
+
+nav ul {
+  display: flex;
+  float: right;
+  margin-right: 25px;
+  animation: fade-in 0.2s linear;
+  transition: none;
+}
+
+nav ul li {
+  margin-right: 25px;
+  animation: fade-in 0.2s linear;
+  transition: none;
+}
+
+nav ul li a {
+  color: aliceblue;
+  animation: fade-in 0.2s linear;
+  transition: none;
+}
+
+nav ul li:hover {
+  background-color: rgb(75, 0, 0);
   border-radius: 5px;
   animation: fade-in 0.2s linear;
   transition: none;
 }
 
-body{
-    margin: 120px 80px 120px 80px;
-    background-color: black;
-    color: aliceblue
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+  background-color: rgb(75, 0, 0);
+  color: #000; /* Changer la couleur à votre goût */
+  border: 2px solid #000; /* Ajouter une bordure */
+  padding: 4px;
+}
+
+
+body {
+  margin: 120px 80px 120px 80px;
+  background-color: black;
+  color: aliceblue
 }
 
 footer {
@@ -95,7 +104,7 @@ footer {
   width: 100%;
   color: aliceblue;
   animation: fade-in 1s linear;
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(27, 0, 0) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(27, 0, 0) 50%, rgba(0, 0, 0, 1) 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -103,9 +112,9 @@ footer {
 }
 
 footer p {
-display: block;
-margin: auto;
-margin-left: 25px;
+  display: block;
+  margin: auto;
+  margin-left: 25px;
 }
 
 .footer-icons {
@@ -118,4 +127,44 @@ margin-left: 25px;
 .footer-icons a {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+
+@media (max-width: 767.98px) {
+  .navbar-toggler {
+    background-color: #000;
+  }
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: #000000; /* Changer la couleur à votre goût */
+    padding: 2rem;
+  }
+  .navbar-nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    height: 100%;
+    left: 10;
+  }
+
+  
+nav ul li:hover {
+  background-color: rgb(75, 0, 0);
+  border-radius: 5px;
+
+}
+  .nav-link {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #000; /* Changer la couleur à votre goût */
+  }
+
+
 }

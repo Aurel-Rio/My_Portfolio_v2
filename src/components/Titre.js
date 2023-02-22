@@ -6,12 +6,12 @@ import '../Titre.css';
 
 const Titre = () => {
     return (
-        <section id="titre">
+        <div id="titre">
             <Navbar />
             <p>Titre de développeur Web/Web mobile - Niveau 5 Etat Français</p>
             <img src={titreImage} alt="Mon Tire de développeur Web" />
             <Footer />
-        </section>
+        </div>
     )
 }
 

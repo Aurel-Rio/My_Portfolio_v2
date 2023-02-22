@@ -6,14 +6,14 @@ import '../CurriculumVitae.css';
 
 const Curriculum_vitae = () => {
     return (
-        <section id="#Curriculum_vitae">
+        <div id="#Curriculum_vitae">
             <Navbar />
             <h3>Voici mon Curriculum Vitae:</h3>
             <div className="img_cv">
-            <img src={cvImage} alt="Mon Curriculum vitae" />
+                <img src={cvImage} alt="Mon Curriculum vitae" />
             </div>
             <Footer />
-        </section>
+        </div>
     )
 }
 

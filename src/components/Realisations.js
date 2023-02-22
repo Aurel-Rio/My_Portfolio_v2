@@ -4,11 +4,11 @@ import Navbar from "./Navbar";
 import ProjetItem from "./Projet"; // Utilisation du nouveau nom
 
 
-//import "../Realisations.css";
+import "../Realisations.css";
 
 const projets = [
   {
-    titre: "Projet 1: " + "Ce Portfolio !",
+    titre: "Projet 1: Ce Portfolio !",
 
     description: (
       <div className="portfolio">
@@ -31,11 +31,11 @@ const projets = [
       </div>
     ),
     imageSrc: [
- 
+      process.env.PUBLIC_URL + '/img/iss09-3.png'
     ],
   },
   {
-    titre: "Projet 2: " + "Site vitrine pour la boutique Iss09 (Informatique, Services, Saverdun)",
+    titre: "Projet 2: Site vitrine pour la boutique Iss09 (Informatique, Services, Saverdun)",
     techno: "Html5, Css3, Php, JavaScript",
     description:
       "Le site http://iss09.fr est un site vitrine que j'ai développé en distanciel avant mon entrée en formation à l'ADRAR. Ce site est destiné à présenter l'entreprise ISS09, qui propose des services en installation de système de sécurité, dépannage informatique et formation. Si vous voulez voir le site en ligne, vous pouvez cliquer sur le lien ci-dessous.",
@@ -47,7 +47,7 @@ const projets = [
     link: <a href="http://www.iss09.fr" target="about:blank">Lien vers le site Iss09</a>
   },
   {
-    titre: "Projet 3: " + "Projet de plateforme Web Retro_Tech - En cours",
+    titre: "Projet 3: Projet de plateforme Web Retro_Tech - En cours",
     techno: "Bootstrap, NodeJs, ReactJs, css3, git",
     description:
       "Le projet Retro_Tech a pour but (à terme) de rassembler une communauté de passionnés de jeux vidéo rétro, que ce soit sur PC, consoles, écrans ou même dans le coding. Sur RetroTech, vous pourrez découvrir des actualités, des tutoriels, des astuces et des conseils pour réparer ou optimiser votre matériel, ainsi que des articles de fond sur l'histoire du rétro-gaming et des analyses de jeux cultes. De plus, notre blog vous propose des articles de qualité écrits par des experts et des amateurs éclairés, qui partagent leur expérience et leur passion pour le jeu vidéo rétro.",
@@ -58,7 +58,7 @@ const projets = [
     ],
   },
   {
-    titre: "Projet 4: " + "Projet de site Web e-commerce (Bijoux Fantaisie) - En cours",
+    titre: "Projet 4: Projet de site Web e-commerce (Bijoux Fantaisie) - En cours",
     techno: "Html5, Css3, JavaScript, Php, Sql, bootstrap",
     description:
       "La boutique Sirven Bijoux Fantaisie à besoin d'une solution e-commerce afin de vendre ces produits. Développement réalisé pendant un stage durant ma formation à l'Adrar. ",

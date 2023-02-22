@@ -1,7 +1,5 @@
 
 
-
-
 .projet h4 {
     margin-top: 60px;
     text-align: center;
@@ -9,11 +7,10 @@
 }
 
 .projet img {
-    z-index: 2;
+
     margin-bottom: 40px;
     border:1px solid rgb(134, 134, 134);
     max-width: 95%;
-
 }
 
 .projet p {
@@ -24,8 +21,8 @@
     transition: none;
     transform: none;
     text-align: center;
-    
 }
+
 
 .portfolio{
     text-align: left;
@@ -39,7 +36,14 @@
 nav{font-size: initial;}
 
 #Realisations{
+
     text-align:center;
     display: inline;
     font-size: 1.2em;
 }
+
+
+.slick-slider {
+    position: relative;
+    z-index: 0;
+  }

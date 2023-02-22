@@ -1,8 +1,10 @@
 .zone_txt_center{
     position: absolute;
+    z-index: -1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-style: italic;
+
 }
 

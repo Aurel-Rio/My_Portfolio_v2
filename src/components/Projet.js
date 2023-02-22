@@ -21,7 +21,7 @@ const Projet = ({ titre, techno, description, imageSrc, link }) => {
       <p>{description}</p>
       <Slider {...settings}>
         {imageSrc.map((imageSrc, index) => (
-          <img key={index} src={imageSrc} alt={`${titre}-image-${index}`} />
+          <img key={index} src={imageSrc} alt="Illustration du projet" />
         ))}
       </Slider>
       <p>{link}</p>
