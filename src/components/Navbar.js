@@ -28,6 +28,9 @@ function Navbar() {
               <Link to="/Titre" className="nav-link" style={{ color: 'white' }}>Mon titre</Link>
             </li>
             <li className="nav-item">
+              <Link to="/Environnement" className="nav-link" style={{ color: 'white' }}>Mon environnement</Link>
+            </li>
+            <li className="nav-item">
               <Link to="/contact" className="nav-link" style={{ color: 'white' }}>Contact</Link>
             </li>
           </ul>

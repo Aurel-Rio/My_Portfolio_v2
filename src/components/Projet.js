@@ -17,14 +17,14 @@ const Projet = ({ titre, techno, description, imageSrc, link }) => {
   return (
     <div className="projet">
       <h4>{titre}</h4>
-      <h4>Technologies utilisées: {techno}</h4>
-      <p>{description}</p>
+      <h4> {techno}</h4>
+      <div>{description}</div>
       <Slider {...settings}>
         {imageSrc.map((imageSrc, index) => (
           <img key={index} src={imageSrc} alt="Illustration du projet" />
         ))}
       </Slider>
-      <p>{link}</p>
+      <div>{link}</div>
     </div>
   );
 };

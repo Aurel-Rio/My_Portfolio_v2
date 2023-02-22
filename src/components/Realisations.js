@@ -1,7 +1,8 @@
 import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import ProjetItem from "./Projet"; // Utilisation du nouveau nom
+import ProjetItem from "./Projet"; 
+import { Button } from "react-bootstrap";
 
 
 import "../Realisations.css";
@@ -9,7 +10,7 @@ import "../Realisations.css";
 const projets = [
   {
     titre: "Projet 1: Ce Portfolio !",
-
+    id: "projet1",
     description: (
       <div className="portfolio">
         <h4>Voici la liste des principales technologies et dépendances utilisées pour réaliser mon portfolio :</h4>
@@ -31,12 +32,14 @@ const projets = [
       </div>
     ),
     imageSrc: [
-      process.env.PUBLIC_URL + '/img/iss09-3.png'
+      process.env.PUBLIC_URL + '/img/portfolio-1.png',
+      process.env.PUBLIC_URL + '/img/portfolio-2.png'
     ],
   },
   {
+    id: "projet2",
     titre: "Projet 2: Site vitrine pour la boutique Iss09 (Informatique, Services, Saverdun)",
-    techno: "Html5, Css3, Php, JavaScript",
+    techno: "Technologies utilisées: Html5, Css3, Php, JavaScript",
     description:
       "Le site http://iss09.fr est un site vitrine que j'ai développé en distanciel avant mon entrée en formation à l'ADRAR. Ce site est destiné à présenter l'entreprise ISS09, qui propose des services en installation de système de sécurité, dépannage informatique et formation. Si vous voulez voir le site en ligne, vous pouvez cliquer sur le lien ci-dessous.",
     imageSrc: [
@@ -47,8 +50,9 @@ const projets = [
     link: <a href="http://www.iss09.fr" target="about:blank">Lien vers le site Iss09</a>
   },
   {
+    id: "projet3",
     titre: "Projet 3: Projet de plateforme Web Retro_Tech - En cours",
-    techno: "Bootstrap, NodeJs, ReactJs, css3, git",
+    techno: "Technologies utilisées: Bootstrap, NodeJs, ReactJs, css3, git",
     description:
       "Le projet Retro_Tech a pour but (à terme) de rassembler une communauté de passionnés de jeux vidéo rétro, que ce soit sur PC, consoles, écrans ou même dans le coding. Sur RetroTech, vous pourrez découvrir des actualités, des tutoriels, des astuces et des conseils pour réparer ou optimiser votre matériel, ainsi que des articles de fond sur l'histoire du rétro-gaming et des analyses de jeux cultes. De plus, notre blog vous propose des articles de qualité écrits par des experts et des amateurs éclairés, qui partagent leur expérience et leur passion pour le jeu vidéo rétro.",
     imageSrc: [
@@ -58,8 +62,9 @@ const projets = [
     ],
   },
   {
+    id: "projet4",
     titre: "Projet 4: Projet de site Web e-commerce (Bijoux Fantaisie) - En cours",
-    techno: "Html5, Css3, JavaScript, Php, Sql, bootstrap",
+    techno: "Technologies utilisées:Bootstrap, NodeJs, ReactJs, css3, git",
     description:
       "La boutique Sirven Bijoux Fantaisie à besoin d'une solution e-commerce afin de vendre ces produits. Développement réalisé pendant un stage durant ma formation à l'Adrar. ",
     imageSrc: [
@@ -73,25 +78,35 @@ const projets = [
 const Realisations = () => {
   return (
     <div>
-      <section id="Realisations">
+      <div id="Realisations">
         <Navbar />
         <h2>Réalisations</h2>
         <h3>
           Découvrez mes projets réalisés, qui mettent en avant mon expertise en
           matière de développement web.
         </h3>
+        <div>
+          <Button variant="primary" href="#projet1">Projet 1</Button>
+          <Button variant="primary" href="#projet2">Projet 2</Button>
+          <Button variant="primary" href="#projet3">Projet 3</Button>
+          <Button variant="primary" href="#projet4">Projet 4</Button>
+        </div>
+      </div>
 
-      </section>
-  
-      {projets.map((projet, index) => (
-        <ProjetItem
-          key={index}
-          titre={projet.titre}
-          techno={projet.techno}
-          description={projet.description}
-          imageSrc={projet.imageSrc}
-          link={projet.link}
-        />
+      {ProjetItem.map(projet => (
+        <div key={projet.id} id={projet.id}>
+          <h3>{projet.titre}</h3>
+          {projet.techno && <p>{projet.techno}</p>}
+          {projet.description && <p>{projet.description}</p>}
+          {projet.imageSrc && (
+            <div>
+              {projet.imageSrc.map((src, index) => (
+                <img key={index} src={src} alt={projet.titre} />
+              ))}
+            </div>
+          )}
+          {projet.link && projet.link}
+        </div>
       ))}
       <Footer />
     </div>
