@@ -1,20 +1,45 @@
+
+
+
+
 .projet h4 {
     margin-top: 60px;
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 1.5em;
 }
 
 .projet img {
+    z-index: 2;
     margin-bottom: 40px;
-    width:  85vw;
-    border:1px solid rgb(134, 134, 134)
+    border:1px solid rgb(134, 134, 134);
+    max-width: 95%;
+
 }
 
 .projet p {
     margin-top: 20px;
 }
 
-#Realisations{
-
+.projet{
+    transition: none;
+    transform: none;
     text-align: center;
+    
+}
+
+.portfolio{
+    text-align: left;
+}
+
+.portfolio ul li{
+    margin: 10px 0px 0px 35px;
+    list-style-type: disc;
+}
+
+nav{font-size: initial;}
+
+#Realisations{
+    text-align:center;
+    display: inline;
+    font-size: 1.2em;
 }

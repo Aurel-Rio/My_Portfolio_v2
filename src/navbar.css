@@ -4,18 +4,24 @@
     margin: 0;
     list-style: none;
     text-decoration: none;
-    transition: 2s;
+
 }
 
-
+#navi{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
 .Logo_riozacki {
     position: absolute;
     top: 0px;
     left: 25px;
     width: 150px;
     height: 150px;
-    animation: rotate 1.7s linear forwards, fade-in 1s linear;
-    transition: all .2s ease-in-out;
+    animation: rotate 1s linear forwards, fade-in 1s linear;
+    transition: all .1s ease-in-out;
 
     animation-iteration-count: 1;
   }
@@ -31,7 +37,7 @@
     
   @keyframes rotate {
     0% {
-      transform: translate(150%, -500%) rotate(0deg) scale(10);
+      transform: translate(-50%, -500%) rotate(0deg) scale(15);
     }
 
     100% {
@@ -40,9 +46,8 @@
   }
 
 nav{
-    position: fixed;
-    top: 0;
-    left: 0;
+
+  
     height: 60px;
     width: 100%;
     animation: fade-in 1s linear;
@@ -52,15 +57,28 @@ nav ul{
     display: flex;
     float: right;
     margin-right: 25px;
+    animation: fade-in 0.2s linear;
+    transition: none;
 }
 
 
 nav ul li{
     margin-right: 25px;
+    animation: fade-in 0.2s linear;
+    transition: none;
 }
 
 nav ul li a{
     color: aliceblue;
+    animation: fade-in 0.2s linear;
+    transition: none;
+}
+
+nav ul li:hover{
+ background-color: rgb(75, 0, 0);
+  border-radius: 5px;
+  animation: fade-in 0.2s linear;
+  transition: none;
 }
 
 body{
@@ -69,19 +87,35 @@ body{
     color: aliceblue
 }
 
-footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 60px;
-    width: 100%;
-    color: aliceblue;
-    text-align: center;
-    animation: fade-in 1s linear;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(27, 0, 0) 50%, rgba(0,0,0,1) 100%);
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  color: aliceblue;
+  animation: fade-in 1s linear;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(27, 0, 0) 50%, rgba(0,0,0,1) 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer p {
-  margin-top: 15px;
+display: block;
+margin: auto;
+margin-left: 25px;
 }
 
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer-icons a {
+  margin-left: 10px;
+  margin-right: 10px;
+}

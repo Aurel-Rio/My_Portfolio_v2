@@ -1,24 +1,27 @@
+import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const ProjetItem = ({ titre, techno, description, imagesSrc, link }) => { // Correction : utilise `imagesSrc` au lieu de `imageSrc`
+const Projet = ({ titre, techno, description, imageSrc, link }) => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2, // nombre d'images affichées en même temps
     slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 2000,
   };
 
   return (
     <div className="projet">
       <h4>{titre}</h4>
-      <h5>Technologies utilisées: {techno}</h5>
+      <h4>Technologies utilisées: {techno}</h4>
       <p>{description}</p>
       <Slider {...settings}>
-        {imagesSrc.map((image, index) => ( // Correction : utilise `imagesSrc` au lieu de `imageSrc`
-          <div key={index}>
-            <img src={image} alt={titre + " - Image " + (index + 1)} />
-          </div>
+        {imageSrc.map((imageSrc, index) => (
+          <img key={index} src={imageSrc} alt={`${titre}-image-${index}`} />
         ))}
       </Slider>
       <p>{link}</p>
@@ -26,4 +29,4 @@ const ProjetItem = ({ titre, techno, description, imagesSrc, link }) => { // Cor
   );
 };
 
-export default ProjetItem;
+export default Projet;
