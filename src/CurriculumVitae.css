@@ -2,10 +2,13 @@ img {
     display: block;
     margin: auto;
     margin-top: 80px;
-
 }
 
-.img_cv{
+.img_cv img {
+    width: 65vw;
+}
+
+.img_cv {
     transition: 0.6s;
 }
 

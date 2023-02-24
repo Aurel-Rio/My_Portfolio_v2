@@ -1,53 +1,60 @@
-#environnement{
+#environnement {
     margin-top: 180px;
 }
 
-#environnement h5:nth-child(1n+2){
+#environnement h5:nth-child(1n+2) {
     margin: 25px 0px 50px 120px;
-    text-decoration: none;   
+    text-decoration: none;
 }
 
-#debian_link{
+#debian_link {
     display: inline;
 }
 
-#debian_link p{
+#debian_link p {
     line-height: 35px;
 }
 
-#debian_link h5{
+#debian_link h5 {
     margin: 25px 0px 25px 0px;
 }
 
-#debian_link img{
+#debian_link img {
     position: absolute;
     z-index: -1;
     max-width: 30vw;
-    top:0px;
+    top: 0px;
     right: 80px;
 }
 
-#next_environnement{
+#next_environnement {
     display: block;
     margin: auto;
     height: 80px;
-    width:80px;
+    width: 80px;
     background-color: rgb(61, 3, 3);
     border-radius: 50%;
-    border-color: red ;
-    color:aliceblue
+    border-color: red;
+    color: aliceblue
 }
 
-
-.image-clignote  {
+.image-clignote {
     animation-duration: 1.5s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
     transition: none;
- }
+}
 
- @keyframes clignoter {
-   0%   { opacity:1; }
-   40%   {opacity:0; }
-   100% { opacity:1; }
- }
+@keyframes clignoter {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

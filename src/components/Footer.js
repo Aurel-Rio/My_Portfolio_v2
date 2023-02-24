@@ -9,8 +9,8 @@ const Footer = () => {
         <p>&copy; Servant Aurélien 2023</p>
       </div>
       <div className="footer-icons">
-        <a href="https://www.linkedin.com/" target="about:blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-        <a href="https://github.com/" target="about:blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+        <a href="https://www.linkedin.com/in/aur%C3%A9lien-servant-a85218217/" target="about:blank"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+        <a href="https://github.com/Aurel-Rio" target="about:blank"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
       </div>
     </footer>
   );

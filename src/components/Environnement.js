@@ -22,7 +22,7 @@ const Environnement = () => {
 
                     En somme, j'ai choisi Debian 11 Bullseye pour sa stabilité, sa sécurité, sa richesse de paquets, sa communauté active et sa flexibilité en tant que système d'exploitation open-source, ainsi que pour mes préférences personnelles en matière d'environnement de développement et d'automatisation.</p>
             </div>
-            <button id="next_environnement" className="image-clignote ">NEXT</button>
+           {/*<button id="next_environnement" className="image-clignote ">NEXT</button>*/} 
             <Footer />
         </div>
     );

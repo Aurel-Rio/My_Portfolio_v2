@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ProjetItem from "./Projet";
-import { Button } from "react-bootstrap";
+//import { Button } from "react-bootstrap";
 
 
 import "../Realisations.css";
@@ -85,30 +85,28 @@ const Realisations = () => {
           Découvrez mes projets réalisés, qui mettent en avant mon expertise en
           matière de développement web.
         </h3>
-      
-        <div>
 
+        <div>
+{/*
           <Button variant="primary" href={`#${1}`}>Projet 1</Button>
           <Button variant="primary" href={`#${2}`}>Projet 2</Button>
           <Button variant="primary" href={`#${3}`}>Projet 3</Button>
           <Button variant="primary" href={`#${4}`}>Projet 4</Button>
-
+*/}
         </div>
-  
       </div>
 
-      {projets.map((projet, index) => (
-        <ProjetItem
-       
-          key={projet.id}
-          id={projet.id}
-          titre={projet.titre}
-          techno={projet.techno}
-          description={projet.description}
-          imageSrc={projet.imageSrc}
-          link={projet.link}
-        />
-      ))}
+        {projets.map((projet, index) => (
+          <ProjetItem
+            key={projet.id}
+            id={projet.id}
+            titre={projet.titre}
+            techno={projet.techno}
+            description={projet.description}
+            imageSrc={projet.imageSrc}
+            link={projet.link}
+          />
+        ))}
       <Footer />
     </div>
   );
