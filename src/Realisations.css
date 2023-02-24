@@ -46,4 +46,5 @@ nav{font-size: initial;}
 
 .carrousel-container {
     position: relative;
+    z-index: 0;
   }

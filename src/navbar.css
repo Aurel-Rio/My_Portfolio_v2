@@ -11,6 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 .Logo_riozacki {
@@ -49,6 +50,7 @@ nav {
   width: 100%;
   animation: fade-in 1s linear;
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(48, 0, 0, 1) 76%, rgba(0, 0, 0, 1) 100%);
+  z-index: 2;
 }
 
 nav ul {
