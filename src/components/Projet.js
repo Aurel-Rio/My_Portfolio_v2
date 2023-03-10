@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "../Projet.css";
 import "../ImageModal.css";
 
-
 const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);

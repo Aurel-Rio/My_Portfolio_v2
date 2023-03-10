@@ -8,7 +8,7 @@ function Accueil() {
   return (
     <div>
       <Navbar />
-      <div>
+      <div id="title_home_page">
         <h1>My Portfolio</h1>
         <p>Bienvenue sur mon portfolio!</p>
       </div>
