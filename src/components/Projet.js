@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Projet.css";
+import "../ImageModal.css";
 
 
 const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
