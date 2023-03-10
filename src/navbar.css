@@ -74,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background: linear-gradient(90deg, rgb(65, 1, 1) 0%, rgb(27, 0, 0) 50%, rgb(41, 1, 1) 100%);
+  background: linear-gradient(90deg, rgb(95, 0, 0) 0%, rgb(85, 49, 49) 50%, rgb(97, 0, 0) 100%);
   border-color: red;
   border-radius: 5px;
   animation: fade-in 0.2s linear;
