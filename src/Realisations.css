@@ -1,9 +1,10 @@
 
 
 .projet h4 {
-    margin-top: 60px;
+    margin-top: 70px;
     text-align: center;
     font-size: 1.5em;
+    
 }
 
 .projet img {
@@ -18,6 +19,7 @@
 }
 
 .projet{
+    margin-top: 80px;
     transition: none;
     transform: none;
     text-align: center;
@@ -35,11 +37,15 @@
 nav{font-size: initial;}
 
 #Realisations{
+
     text-align:center;
     display: inline;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
+#Realisations h3{
+    margin-top: 150px;
+}
 .portfolio h4{
     margin-bottom: 25px;    
 }
@@ -47,4 +53,25 @@ nav{font-size: initial;}
 .carrousel-container {
     position: relative;
     z-index: 0;
+    transition: none;
   }
+  
+#rea_titre{
+    display: inline;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(45, 0, 0);
+    background: linear-gradient(90deg, rgb(65, 1, 1) 0%, rgb(27, 0, 0) 50%, rgb(41, 1, 1) 100%);
+}
+
+ul li {
+    text-align: left;
+}
+
+@media (max-width: 767.98px) {
+    #rea_titre{
+        border: none;
+        background: black;
+        padding: 0;
+    }
+}

@@ -7,3 +7,8 @@
     font-style: italic;
 }
 
+@media (max-width: 767.98px) {
+    .zone_txt_center{
+        top: 400px;
+    }   
+}

@@ -80,7 +80,6 @@ const Realisations = () => {
     <div>
       <div id="Realisations">
         <Navbar />
-        <h2>Réalisations</h2>
         <h3>
           Découvrez mes projets réalisés, qui mettent en avant mon expertise en
           matière de développement web.

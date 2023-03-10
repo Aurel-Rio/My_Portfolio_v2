@@ -25,8 +25,7 @@ const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
 
   return (
     <div className="projet">
-      {id}
-      <h4>{titre}</h4>
+      <h4 id="rea_titre">{titre}</h4>
       <h4>Technologies utilisées: {techno}</h4>
       <div>{description}</div>
       <div className="carousel-container">

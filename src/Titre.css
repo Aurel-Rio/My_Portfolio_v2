@@ -1,4 +1,15 @@
+
 #titre img {
     max-width: 85vw;
-    transform: none;
+    transform: none;   
+   
+}
+
+@media (max-width: 767.98px) {
+
+    #titre img {
+        max-width: 85vw;
+        transform: translateX(-30px);   
+       
+    }
 }
