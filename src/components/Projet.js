@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Projet.css";
 import "../ImageModal.css";
+import { Button } from "react-bootstrap";
 
 const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,6 +40,13 @@ const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
 
   return (
     <div className="projet">
+      <div className="button_project">
+        <Button className="button-spacing" variant="primary" href={`#${1}`}>Projet 1</Button>
+        <Button className="button-spacing" variant="primary" href={`#${2}`}>Projet 2</Button>
+        <Button className="button-spacing" variant="primary" href={`#${3}`}>Projet 3</Button>
+        <Button className="button-spacing" variant="primary" href={`#${4}`}>Projet 4</Button>
+      </div>
+      <div id={id}></div><br /><br />
       <h4 id="rea_titre">{titre}</h4>
       <h4>Technologies utilisées: {techno}</h4>
       <div>{description}</div>

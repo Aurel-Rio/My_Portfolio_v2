@@ -31,8 +31,9 @@
   }
   
   input[type="submit"] {
-    background-color: #c9302c;
-    color: #fff;
+    z-index: 0;
+    background-color: #000000;
+    color: black;
     border: none;
     border-radius: 5px;
     padding: 10px;
@@ -41,7 +42,7 @@
   }
   
   input[type="submit"]:hover {
-    background-color: #b32824;
+    background-color: #710400;
   }
   
   input[type="submit"]:before {
@@ -98,7 +99,7 @@
     }
   
     input[type="submit"] {
-      background-color: #470000;
+      background-color: #2b0101;
     }
   
     input[type="submit"]:hover {
