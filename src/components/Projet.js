@@ -5,8 +5,18 @@ import "slick-carousel/slick/slick-theme.css";
 import "../Projet.css";
 
 const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
-  const [showModal, setShowModal] = useState(false);
-  const [selectedImage, setSelectedImage] = useState("");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    setModalOpen(false);
+  };
 
   const settings = {
     dots: true,
@@ -26,16 +36,6 @@ const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
     ]
   };
 
-  const handleImageClick = (imageSrc) => {
-    setSelectedImage(imageSrc);
-    setShowModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
-    setSelectedImage("");
-  };
-
   return (
     <div className="projet">
       <h4 id="rea_titre">{titre}</h4>
@@ -43,26 +43,24 @@ const Projet = ({ id, titre, techno, description, imageSrc, link }) => {
       <div>{description}</div>
       <div className="carousel-container">
         <Slider {...settings} className="slider">
-          {imageSrc.map((imageSrc, index) => (
+          {imageSrc.map((image, index) => (
             <img
               key={index}
-              src={imageSrc}
+              src={image}
               alt="Illustration du projet"
-              onClick={() => handleImageClick(imageSrc)}
+              onClick={() => openModal(image)}
+              style={{ cursor: "pointer" }}
             />
           ))}
         </Slider>
       </div>
       <div>{link}</div>
 
-      {showModal && (
-        <div className="modal" onClick={handleCloseModal}>
-          <span className="close" onClick={handleCloseModal}>
-            &times;
-          </span>
-          <div className="modal-content">
-            <img src={selectedImage} alt="Modal" />
-          </div>
+      {/* Modal */}
+      {modalOpen && (
+        <div className="modal" onClick={closeModal}>
+          <img src={selectedImage} alt="Modal" className="modal-image" />
+          <span className="modal-close">&times;</span>
         </div>
       )}
     </div>
